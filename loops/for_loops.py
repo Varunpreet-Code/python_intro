@@ -9,7 +9,7 @@ tea_collection = [
     "Green",
     "Dandelion"
 ]
-
+print(type(tea_collection))
 for tea in tea_collection:
     print(tea)
     print(type(tea))
@@ -35,5 +35,5 @@ groceries = [
 ]
 
 for item in groceries:
-    print(f"{item[0]:<20} ${item[1]: .2f}")
+    print(f"{item[0]:>20}${item[1]: .2f}")
 
