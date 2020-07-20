@@ -104,18 +104,18 @@ def process_weather(forecast_file):
             high_day = date [max_index]
 
 
-        final_1= f"""5 Day Overview\n\tThe lowest temperture will be {min(min_temp)}, and will occur on {low_day}
+        final_output1 = f"""5 Day Overview\n\tThe lowest temperture will be {min(min_temp)}, and will occur on {low_day}
             \n\tThe highest temperature will be {max(max_temp)}, and will occur on {high_day}\n\tThe average low this week is {mean_min}\n\tThe average high this week is {mean_max}\n"""
 
-        final_2 = ""
+        final_output2 = ""
         for x in range(5):
 
             
 
-    final_2 = final_2 + (f"""-------{date[x]}----------\nMinimum Temperture:{min_temp[x]}\nMaximum
+    final_output2 = final_output2 + (f"""-------{date[x]}----------\nMinimum Temperture:{min_temp[x]}\nMaximum
             Temperature:{max_temp[x]}\nDaytime:{desc[x]}\n\tChance of rain:\t{rain_chance[x]}%\nNighttime: {desc_pm[x]}
             \n\tChance of rain:\t {rain_chance_pm[x]}%\n""")
-        final_final_output = final_1 + final_2
+        final_final_output = final_output1 + final_output2
         return final_final_output
 
 

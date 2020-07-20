@@ -7,12 +7,12 @@ def addition(a, b):
     
 
 
-a = 3
-b = 5
-addition(a, b)
-addition(12,17)
-addition_result = addition(b,a)
-print(addition_result)
+# a = 3
+# b = 5
+# addition(a, b)
+# addition(12,17)
+# addition_result = addition(b,a)
+# print(addition_result)
 
 
     
@@ -57,3 +57,27 @@ print(addition_result)
 # ]
 # for item_ingroceries:
 #     print(format_grocery_item(item[0], item[1]))
+
+
+##################################
+# def f_to_c(temp1):
+#     temp = (temp1 - 32)*5/9
+#     return temp
+
+
+# temp1 = [32, 113, 26.6]
+# for i in temp1:
+#     print(f"{i}C = {f_to_c(i)}F")
+
+
+
+number = []
+new_number_string = input("Type a number to add: ")
+
+while len(new_number_string) > 0:
+    new_number = int(new_number_string)
+    number.append(new_number)
+    new_number_string = input("Type a number to add: ")
+
+mean = sum(number)/len(number)
+print("The average of the numbers is {mean}")
